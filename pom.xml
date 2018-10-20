@@ -144,5 +144,10 @@
             </plugin>
         </plugins>
     </build>
-
+<developers>
+	<developer>
+		<name>Daniel Costa</name>
+		<email>daniel.avdc@yahoo.com.br</email>
+</developer>
+</developers>
 </project>
