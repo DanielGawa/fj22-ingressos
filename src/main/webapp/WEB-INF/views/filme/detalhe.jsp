@@ -18,6 +18,7 @@
 	        <h1>${detalhes.titulo}</h1>
 	        <image src="${detalhes.imagem}" />
 	
+	        <div class="infos">
 	        <div>
 	            <label for="ano">Ano</label>
 	            <span id="ano">${detalhes.ano}</span>
@@ -46,6 +47,7 @@
 	        <div>
 	            <label for="avaliacao">Avaliação</label>
 	            <span id="avaliacao">${detalhes.avaliacao}</span>
+	        </div>
 	        </div>
 
 			<%-- <sec:authorize access="hasRole('COMPRADOR')"> --%>

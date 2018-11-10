@@ -1,13 +1,21 @@
 package br.com.caelum.ingresso.model;
 
-import org.hibernate.validator.constraints.NotBlank;
-
-import javax.persistence.*;
-
 import java.math.BigDecimal;
 import java.math.RoundingMode;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+import java.util.Map;
+import java.util.Optional;
 import java.util.stream.Collectors;
+
+import javax.persistence.Entity;
+import javax.persistence.FetchType;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.OneToMany;
+
+import org.hibernate.validator.constraints.NotBlank;
 
 /**
  * Created by nando on 03/03/17.
@@ -40,7 +48,8 @@ public class Sala {
     }
     
     public BigDecimal getPreco(){
-    	return preco.setScale(0, RoundingMode.HALF_UP);
+    	//return preco.setScale(2, RoundingMode.HALF_UP);
+    	return preco;
     }
 
     public Integer getId() {

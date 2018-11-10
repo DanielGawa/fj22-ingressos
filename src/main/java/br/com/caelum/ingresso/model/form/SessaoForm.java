@@ -14,7 +14,6 @@ import br.com.caelum.ingresso.model.Sessao;
 
 public class SessaoForm {
 
-	@NotNull
 	private Integer id;
 	
 	@NotNull
