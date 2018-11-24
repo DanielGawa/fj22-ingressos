@@ -36,7 +36,7 @@ public class SessaoDao {
 	
 }
 	
-	public Sessao findONe(Integer id){
+	public Sessao findOne(Integer id){
 		return manager.find(Sessao.class, id);
 	}
 }
